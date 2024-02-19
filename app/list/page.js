@@ -7,8 +7,6 @@ export default async function List() {
     const db = (await connectDB).db("forum");
     let result = await db.collection("post").find().toArray();
 
-    console.log(result[0].title);
-
     return (
         <div className="list-bg">
             {result.map((a, i) =>
@@ -18,7 +16,8 @@ export default async function List() {
                     <Link href={`/detail/${result[i]._id}`}><h4>{result[i].title}</h4></Link>
 
                     {/* useRouter 방식 */}
-                    <DetailLink id={result[i]._id} />
+                    {/* <DetailLink id={result[i]._id} /> */}
+
                     <p>{result[i].content}</p>
                 </div>
             )

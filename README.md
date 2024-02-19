@@ -14,3 +14,6 @@
 - pages/api/post/new 참고
 
 
+4. 글 수정 기능
+- edit/[id]/page.js 참고
+- pages/api/post/edit.js 참고

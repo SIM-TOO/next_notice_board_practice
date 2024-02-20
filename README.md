@@ -14,3 +14,7 @@
 4. 글 수정 기능
 - edit/[id]/page.js 참고
 - pages/api/post/edit.js 참고
+
+5. 글 삭제 기능
+
+- pages/api/post/delete.js 참고
